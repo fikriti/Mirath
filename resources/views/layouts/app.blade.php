@@ -102,7 +102,7 @@
     <nav class="navbar navbar-expand-lg navbar-modern sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center fw-semibold" href="/">
-                <i class="fas fa-rocket me-2 text-accent"></i> MyApp
+                <i class="fas fa-rocket me-2 text-accent"></i> Mirath
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -139,12 +139,12 @@
                                     class="rounded-circle shadow-sm" width="36" height="36" alt="Avatar">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="userDropdown">
-                                <li><a class="dropdown-item" href="{{ route('profile.edit') }}"><i
-                                            class="fas fa-user me-2 text-muted"></i> الملف الشخصي</a></li>
+                                <!-- <li><a class="dropdown-item" href="{{ route('profile.edit') }}"><i
+                                            class="fas fa-user me-2 text-muted"></i> الملف الشخصي</a></li> -->
                                 {{-- <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2 text-muted"></i>
                                         الإعدادات</a></li>
                                 <li> --}}
-                                <hr class="dropdown-divider">
+                                <!-- <hr class="dropdown-divider"> -->
                         </li>
                         <li>
                             <!-- زر تسجيل الخروج باستخدام SweetAlert -->

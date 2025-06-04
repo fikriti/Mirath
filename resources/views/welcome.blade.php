@@ -22,8 +22,9 @@
                 <i class="fa-solid fa-bars "></i>
             </button>
             <div class="logo1">
-                <a class="navbar-brand d-block d-lg-none me-4" href="#"><img src="{{ asset('/images/font.png') }}"
-                        alt=""></a>
+                <a class="navbar-brand d-block d-lg-none me-4" href="/">
+                    <img src="{{ asset('/images/font.png') }}" alt="">
+                </a>
             </div>
 
             <div class="left-nav d-flex align-items-center me-auto">
@@ -74,7 +75,7 @@
 
 
                 <div class="logo">
-                    <a class="navbar-brand ms-auto fw-bold d-none d-lg-block pt-3" href="#"><img
+                    <a class="navbar-brand ms-auto fw-bold d-none d-lg-block pt-3" href="/"><img
                             src="{{ asset('/images/font.png') }}" alt=""></a>
                 </div>
             </div>
@@ -97,7 +98,8 @@
                         نحن منصة رقمية للمعهد تسّهل على الطالبات عملية التعلم وتتيح للإدارة التنظيم الذكي
                     </p>
                     <p class="fade-in">
-                        <button class="click mt-5">إنضمي إلينا الآن</button>
+                        <a href="{{ route('login') }}">
+                        <button class="click mt-5">إنضمي إلينا الآن</button></a>
                     </p>
                 </div>
             </div>
@@ -161,7 +163,7 @@
     <!-- section: main sections and their children -->
     <section class="services text-center py-5" style="direction: rtl;">
         <div class="container">
-            <h1 class="text-end fw-bold fade-in-left">الأقسام</h1>
+            <h1 class="text-end fw-bold fade-in-left" id="shariea">الأقسام</h1>
 
             @foreach ($mainSections->take(2) as $mainSection)
             @if ($mainSection->children->isNotEmpty())
@@ -412,10 +414,10 @@
                     <button class="click">إرسال</button>
                 </p>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f fa-bounce"></i></a>
-                    <a href="https://x.com/merathalnobowa?s=09"><i class="fab fa-twitter fa-bounce"></i></a>
-                    <a href="#"><i class="fab fa-youtube fa-bounce"></i></a>
-                    <a href="https://t.me/meyratalnoboah"><i class="fab fa-telegram fa-bounce"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61559596173678&mibextid=ZbWKwL" target="_blank"  ><i class="fab fa-facebook-f fa-bounce"></i></a>
+                    <a href="https://x.com/merathalnobowa?s=09" target="_blank"  ><i class="fab fa-twitter fa-bounce"></i></a>
+                    <a href="https://Wa.me/+201152088459" target="_blank" title="للتواصل واتساب" ><i class="fab fa-whatsapp fa-bounce"></i></a>
+                    <a href="https://t.me/meyratalnoboah" target="_blank"  title=" جروب معهد ميراث النبوة للنساء"><i class="fab fa-telegram fa-bounce"></i></a>
                 </div>
             </div>
         </div>
@@ -452,13 +454,13 @@
 
                 <div class="footer-contact  fade-in-left ">
                     <h4>طرق التواصل معنا :</h4>
-                    <p><i class="fas fa-envelope"></i> info@example.com</p>
-                    <p><i class="fab fa-whatsapp"></i> 00000000000</p>
+                    <p><i class="fas fa-envelope"></i> merath.alnobowa21@gmail.com</p>
+                    <p><i class="fab fa-whatsapp"></i> 01152088459</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f fa-bounce"></i></a>
-                        <a href="https://x.com/merathalnobowa?s=09"><i class="fab fa-twitter fa-bounce"></i></a>
-                        <a href="#"><i class="fab fa-youtube fa-bounce"></i></a>
-                        <a href="https://t.me/meyratalnoboah"><i class="fab fa-telegram fa-bounce"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61559596173678&mibextid=ZbWKwL" target="_blank" ><i class="fab fa-facebook-f fa-bounce"></i></a>
+                        <a href="https://x.com/merathalnobowa?s=09" target="_blank" title="للتواصل واتساب"><i class="fab fa-twitter fa-bounce"></i></a>
+                        <a href="https://Wa.me/+201152088459" target="_blank" ><i class="fab fa-whatsapp fa-bounce"></i></a>
+                        <a href="https://t.me/+KY0gv4VJWUk3NWM0" target="_blank" title="تفاعلية معهد ميراث النبوة"><i class="fab fa-telegram fa-bounce"></i></a>
                     </div>
                 </div>
             </div>
